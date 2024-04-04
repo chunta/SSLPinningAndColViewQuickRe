@@ -13,6 +13,12 @@
 		F70C46492BBBE75D00A9C74B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F70C46482BBBE75D00A9C74B /* Base */; };
 		F70C464B2BBBE75F00A9C74B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F70C464A2BBBE75F00A9C74B /* Assets.xcassets */; };
 		F70C464E2BBBE75F00A9C74B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F70C464D2BBBE75F00A9C74B /* Base */; };
+		F70C46572BBBE82E00A9C74B /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70C46552BBBE82E00A9C74B /* CustomCollectionViewCell.swift */; };
+		F70C46582BBBE82E00A9C74B /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F70C46562BBBE82E00A9C74B /* CustomCollectionViewCell.xib */; };
+		F7EF36CF2BBEE6890099A114 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F7EF36CE2BBEE6890099A114 /* Alamofire */; };
+		F7EF36D12BBEE6890099A114 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F7EF36D02BBEE6890099A114 /* AlamofireDynamic */; };
+		F7EF36D52BBEF64F0099A114 /* cert.pem in Resources */ = {isa = PBXBuildFile; fileRef = F7EF36D42BBEF64F0099A114 /* cert.pem */; };
+		F7EF36D72BBF002A0099A114 /* cert.der in Resources */ = {isa = PBXBuildFile; fileRef = F7EF36D62BBF002A0099A114 /* cert.der */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,10 @@
 		F70C464A2BBBE75F00A9C74B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F70C464D2BBBE75F00A9C74B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F70C464F2BBBE75F00A9C74B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F70C46552BBBE82E00A9C74B /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		F70C46562BBBE82E00A9C74B /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		F7EF36D42BBEF64F0099A114 /* cert.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cert.pem; sourceTree = "<group>"; };
+		F7EF36D62BBF002A0099A114 /* cert.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = cert.der; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7EF36CF2BBEE6890099A114 /* Alamofire in Frameworks */,
+				F7EF36D12BBEE6890099A114 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +68,8 @@
 		F70C46402BBBE75D00A9C74B /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				F7EF36D62BBF002A0099A114 /* cert.der */,
+				F7EF36D42BBEF64F0099A114 /* cert.pem */,
 				F70C46412BBBE75D00A9C74B /* AppDelegate.swift */,
 				F70C46432BBBE75D00A9C74B /* SceneDelegate.swift */,
 				F70C46452BBBE75D00A9C74B /* ViewController.swift */,
@@ -63,6 +77,8 @@
 				F70C464A2BBBE75F00A9C74B /* Assets.xcassets */,
 				F70C464C2BBBE75F00A9C74B /* LaunchScreen.storyboard */,
 				F70C464F2BBBE75F00A9C74B /* Info.plist */,
+				F70C46552BBBE82E00A9C74B /* CustomCollectionViewCell.swift */,
+				F70C46562BBBE82E00A9C74B /* CustomCollectionViewCell.xib */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -83,6 +99,10 @@
 			dependencies = (
 			);
 			name = CollectionView;
+			packageProductDependencies = (
+				F7EF36CE2BBEE6890099A114 /* Alamofire */,
+				F7EF36D02BBEE6890099A114 /* AlamofireDynamic */,
+			);
 			productName = CollectionView;
 			productReference = F70C463E2BBBE75D00A9C74B /* CollectionView.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,9 @@
 				Base,
 			);
 			mainGroup = F70C46352BBBE75D00A9C74B;
+			packageReferences = (
+				F7EF36CD2BBEE6890099A114 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = F70C463F2BBBE75D00A9C74B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +150,10 @@
 			files = (
 				F70C464B2BBBE75F00A9C74B /* Assets.xcassets in Resources */,
 				F70C464E2BBBE75F00A9C74B /* Base in Resources */,
+				F7EF36D52BBEF64F0099A114 /* cert.pem in Resources */,
+				F7EF36D72BBF002A0099A114 /* cert.der in Resources */,
 				F70C46492BBBE75D00A9C74B /* Base in Resources */,
+				F70C46582BBBE82E00A9C74B /* CustomCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +167,7 @@
 				F70C46462BBBE75D00A9C74B /* ViewController.swift in Sources */,
 				F70C46422BBBE75D00A9C74B /* AppDelegate.swift in Sources */,
 				F70C46442BBBE75D00A9C74B /* SceneDelegate.swift in Sources */,
+				F70C46572BBBE82E00A9C74B /* CustomCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,9 +317,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B2B6DZH8RD;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6P7LJS7G56;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CollectionView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -300,13 +333,17 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.CollectionView;
+				OTHER_SWIFT_FLAGS = "-DUSE_SSL_PINNING_CERTIFICATE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mildgrind.fuse.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Fuse Dev";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -318,9 +355,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B2B6DZH8RD;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6P7LJS7G56;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CollectionView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,13 +368,17 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.CollectionView;
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mildgrind.fuse.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Fuse Dev";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -363,6 +407,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F7EF36CD2BBEE6890099A114 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F7EF36CE2BBEE6890099A114 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7EF36CD2BBEE6890099A114 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F7EF36D02BBEE6890099A114 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7EF36CD2BBEE6890099A114 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F70C46362BBBE75D00A9C74B /* Project object */;
 }
