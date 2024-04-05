@@ -15,6 +15,7 @@
 		F70C464E2BBBE75F00A9C74B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F70C464D2BBBE75F00A9C74B /* Base */; };
 		F70C46572BBBE82E00A9C74B /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70C46552BBBE82E00A9C74B /* CustomCollectionViewCell.swift */; };
 		F70C46582BBBE82E00A9C74B /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F70C46562BBBE82E00A9C74B /* CustomCollectionViewCell.xib */; };
+		F7579B002BBFB38A006F8CE3 /* certificate_public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = F7579AFF2BBFB38A006F8CE3 /* certificate_public_key.pem */; };
 		F7EF36CF2BBEE6890099A114 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F7EF36CE2BBEE6890099A114 /* Alamofire */; };
 		F7EF36D12BBEE6890099A114 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F7EF36D02BBEE6890099A114 /* AlamofireDynamic */; };
 		F7EF36D52BBEF64F0099A114 /* cert.pem in Resources */ = {isa = PBXBuildFile; fileRef = F7EF36D42BBEF64F0099A114 /* cert.pem */; };
@@ -32,6 +33,7 @@
 		F70C464F2BBBE75F00A9C74B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F70C46552BBBE82E00A9C74B /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		F70C46562BBBE82E00A9C74B /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		F7579AFF2BBFB38A006F8CE3 /* certificate_public_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = certificate_public_key.pem; sourceTree = "<group>"; };
 		F7EF36D42BBEF64F0099A114 /* cert.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cert.pem; sourceTree = "<group>"; };
 		F7EF36D62BBF002A0099A114 /* cert.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = cert.der; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +70,7 @@
 		F70C46402BBBE75D00A9C74B /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				F7579AFF2BBFB38A006F8CE3 /* certificate_public_key.pem */,
 				F7EF36D62BBF002A0099A114 /* cert.der */,
 				F7EF36D42BBEF64F0099A114 /* cert.pem */,
 				F70C46412BBBE75D00A9C74B /* AppDelegate.swift */,
@@ -152,6 +155,7 @@
 				F70C464E2BBBE75F00A9C74B /* Base in Resources */,
 				F7EF36D52BBEF64F0099A114 /* cert.pem in Resources */,
 				F7EF36D72BBF002A0099A114 /* cert.der in Resources */,
+				F7579B002BBFB38A006F8CE3 /* certificate_public_key.pem in Resources */,
 				F70C46492BBBE75D00A9C74B /* Base in Resources */,
 				F70C46582BBBE82E00A9C74B /* CustomCollectionViewCell.xib in Resources */,
 			);
